@@ -162,11 +162,11 @@ h1, h2, h3, h4, h5, .font-size-larger { }
     padding-top: 40px;
     #c3-logo-header{
         float:left;
-        width:125px;
-        height:45px;
+        width:150px;
+        height:50px;
         background: #EEECDF url('@{base-url}/images/c3-consulting-logo.png') no-repeat left top;
+        background-size:100% 100%!important;
         position:relative;
-        top: 8px;
     }
     .clearfix();
 }
@@ -550,4 +550,24 @@ div#bottom-margin{
     display: block;
     top: 10px;
   }
+}
+@media screen and (max-width: 400px) {
+  
+    .asset-title .font-size-larger  {
+        font-size:1.2em!important;
+    }
+    
+    #my-pop-title #c3-logo-header{
+        top:0!important;
+        left:50%!important;
+        margin-left:-62.5px;
+        margin-bottom:10px!important;
+    }
+    
+    #pop-title{
+        margin-left:0!important;
+        margin-bottom:10px!important;
+    }
+    
+    
 }
