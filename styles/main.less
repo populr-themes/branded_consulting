@@ -162,10 +162,11 @@ h1, h2, h3, h4, h5, .font-size-larger { }
     padding-top: 40px;
     #c3-logo-header{
         float:left;
-        width:125px;
-        height:45px;
+        width:150px;
+        height:65px;
         background: #EEECDF url('@{base-url}/images/c3-consulting-logo.png') no-repeat left top;
         position:relative;
+        background-size: 100%;
         top: 8px;
     }
     .clearfix();
@@ -182,15 +183,15 @@ columnizer-row:first-child{
 #pop-title {
     .pop-title-text();
     text-align: center!important;
-    padding:0!important; 
+    padding:0!important;
     font-size: 50px;
     color: #464a4e;
     margin-left:135px;
-    
+
 }
 
 .columnizer-row-contents-imagegroup .columnizer-row{
-    
+
 }
 
 .columnizer-row-inner{
@@ -296,7 +297,7 @@ columnizer-row:first-child{
         font-weight:400;
         &:hover{i.icon{color:rgba(255, 255, 255, 1);}}
       }
-      i.icon { 
+      i.icon {
         font-style: normal !important; text-align: center; vertical-align: middle;
         font-size: 18px; margin-right:8px;position: relative; top:-1px; color: rgba(255, 255, 255, 0.5);
         transition: color 0.5s ease;
@@ -323,7 +324,7 @@ columnizer-row:first-child{
                 width:100px;
                 margin:0 0 10px 0;
             }
-        } 
+        }
         #doc-title{
             display: block;
             margin: 0;
@@ -540,6 +541,7 @@ div#bottom-margin{
   #background { height: 200px; }
   #main-content { margin: 0px auto 40px !important; }
   .asset-title { font-size: 20px !important; }
+  .asset h2 .font-size-larger { font-size: 1.2em; }
   .description, .body, .description li, .body li { font-size: 16px !important;line-height: 1.6; i{font-size: 17px!important;} }
   #my-container { margin: 0 auto !important; width:80%!important; }
   #my-container.has-pop-sharing-links { width:75%!important; }
@@ -550,4 +552,26 @@ div#bottom-margin{
     display: block;
     top: 10px;
   }
+}
+
+@media screen and (max-width: 400px) {
+
+    .asset-title .font-size-larger  {
+        font-size:1.2em!important;
+    }
+
+    #my-pop-title #c3-logo-header{
+        top:0!important;
+        left:50%!important;
+        margin-left:-75px!important;
+        margin-bottom:5px!important;
+    }
+
+    #pop-title{
+        margin-left:0!important;
+        margin-bottom:10px!important;
+        top:0!important;
+    }
+
+
 }
